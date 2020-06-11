@@ -1,6 +1,9 @@
+html {
+    font-size: 16px;
+}
 body {
     font-family: "Trebuchet MS", Helvetica, sans-serif;
-    color: gray;
+    color: dimgray;
 }
 
 /* Header Section */
@@ -11,7 +14,6 @@ header {
     background-color: white;
     top: 0;
     width: 100%;
-
 }
 
 header .content {
@@ -23,12 +25,18 @@ header .content {
 
 header img {
     margin: auto 0;
-    height: 32px;
+    height: 38px;
 }
 
 .content .logo {
     line-height: 32px;
+    font-size: 20px;
 }
+
+.content strong {
+    color: #202020;
+}
+
 .content nav {
     margin-left: auto;
 }
@@ -47,8 +55,106 @@ header a {
     text-decoration: none;
 }
 
-/* Main Section */
+/* Main Content Section */
 
 main {
-    margin: 64px;
+    margin-top: 64px;
+}
+
+    /* Start Section */
+
+#start-section {
+    display: flex;
+    background-color: lightgray;
+}
+
+.start-container1 {
+    width: 60%;
+    margin: 32px 24px;
+}
+
+.start-container1 img {
+    width: 100%;
+}
+
+.start-container2 {
+    width: 40%;
+    margin: auto 16px;
+    font-weight: bold;
+}
+
+.start-container2 button {
+    width: 65%;
+    padding: 8px;
+    color: lightgray;
+    font-weight: bold;
+    background-color: dimgray;
+    border: none;
+}
+
+/* Info Section */
+
+#info-section {
+    display: flex;
+}
+
+.info-container1 {
+    width: 60%;
+    margin: 32px 24px;
+}
+
+.info-container1 .content h2 {
+    margin-bottom: 24px;
+}
+
+.info-container1 .content caption {
+    margin-bottom: 32px;
+}
+
+.info-container1 img {
+    width: 100%;
+}
+
+.info-container2 {
+    width: 40%;
+    margin: 16px auto 32px;
+    display: flex;
+    flex-direction: column;
+    border-left: 2px solid lightgray;
+}
+
+.info-container2 .container {
+    display: flex;
+    border-style: none none double none;
+    border-color: lightgray;
+}
+
+.container img {
+    height: auto;
+    width: 35%;
+    margin: 16px;
+}
+
+.container .content {
+    width: 65%;
+    margin: auto;
+}
+
+.container .content h3 {
+    margin-bottom: 8px;
+}
+
+.container .content p {
+    margin-bottom: 8px;
+}
+
+.highlight {
+    background-color: lightgray;
+}
+
+/* Courses Section */
+
+#courses-section {
+    display: flex;
+    background-color: lightgray;
 }
