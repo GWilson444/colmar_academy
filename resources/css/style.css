@@ -84,7 +84,7 @@ main {
 }
 
 .start-container2 button {
-    width: 65%;
+    width: 90%;
     padding: 8px;
     color: lightgray;
     font-weight: bold;
@@ -129,23 +129,27 @@ main {
     border-color: lightgray;
 }
 
-.container img {
+.info-container2 img {
     height: auto;
     width: 35%;
     margin: 16px;
 }
 
-.container .content {
+.info-container2 .container .content {
     width: 65%;
     margin: auto;
 }
 
 .container .content h3 {
-    margin-bottom: 8px;
+    margin: 0 0 8px 0;
 }
 
 .container .content p {
-    margin-bottom: 8px;
+    margin: 0 0 8px 0;
+}
+
+.container .content a {
+    margin: 0 0 8px 0;
 }
 
 .highlight {
@@ -155,6 +159,38 @@ main {
 /* Courses Section */
 
 #courses-section {
-    display: flex;
     background-color: lightgray;
+    padding-top: 32px;
+}
+
+#courses-section h2 {
+    text-align: center;
+    margin: auto;
+}
+
+.courses-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: auto 56px;
+    padding: 16px 0; 
+}
+
+.courses-container img {
+    height: auto;
+    width: 100%;
+
+}
+
+.courses-container .container{
+    display: flex;
+    flex-flow: column wrap;
+    min-width: 365px;
+    max-width: 417px;
+    margin: 16px;
+}
+.courses-container .content {
+    padding: 16px 16px 24px;
+    background-color: white;
+    flex: 1;
 }
