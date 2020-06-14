@@ -15,6 +15,7 @@ header {
     height: 64px;
     background-color: white;
     top: 0;
+    left: 0;
     width: 100%;
 }
 
@@ -113,6 +114,7 @@ main {
 @media only screen and (max-width: 760px) {
     #start-section {
         flex-direction: column;
+        justify-content: center;
     }
 
     .start-container1 {
@@ -121,11 +123,11 @@ main {
     }
     
     .start-container2 h1 {
-        margin: 0 16px 32px;        
+        margin: 0 0 32px;        
     }
 
     .start-container2 p {
-        margin: 0 16px 24px;
+        margin: 0 0 24px;
     }
 
     .start-container2 {
@@ -135,7 +137,7 @@ main {
 
     .start-container2 button {
         margin: 0 auto;
-        width: 95%;
+        width: 90%;
     }
 }
 
@@ -203,6 +205,7 @@ main {
 
 .container .content a {
     margin: 0 0 8px 0;
+    text-decoration: none;
 }
 
 .highlight {
@@ -220,7 +223,7 @@ main {
 
     #info-section {
         flex-direction: column;
-        margin: 16px 16px 32px;
+        margin: 16px 16px 0;
     }
 
     .info-container1 {
@@ -229,13 +232,13 @@ main {
 
     .info-container2 {
         width: 100%;
-        margin: 0 32px;
+        margin: 0;
         border-left: none;
     }
 
     .info-container2 img {
         width: 100%;
-        margin-bottom: 16px;
+        margin: 0 0 16px;
     }
 
     .info-container2 .container {
@@ -245,8 +248,8 @@ main {
     }
 
     .info-container2 .container .content {
-        width: 100%;
-        margin: 0 16px 64px;
+        width: 90%;
+        margin: 16px 16px 64px;
     }
     .highlight {
         background-color: white;
@@ -289,6 +292,34 @@ main {
     padding: 16px 16px 24px;
     background-color: white;
     flex: 1;
+}
+
+@media only screen and (max-width: 760px) {
+    #courses-section {
+        padding: 0;
+        margin: 0 16px;
+        background-color: white;
+    }
+
+    #courses-section .desktop {
+        display: none;
+    }
+    
+    #courses-section .mobile {
+        display: inline-block;
+    }
+
+    .courses-container {
+        width: 100%;
+        margin: 12px 0 28px;
+    }
+
+    .courses-container h3 {
+        width: 100%;
+        padding: 16px 0 24px 16px;
+        margin: 4px 0;
+        background-color: lightgray;
+    }
 }
 
 /* Thesis Section */
@@ -346,6 +377,29 @@ main {
     margin: auto;
 }
 
+@media only screen and (max-width: 760px) {
+    .thesis-container1 {
+        width: 100%;
+        padding: 0;
+    }
+
+    .video {
+        max-width: 100%;
+        max-height: 100%;
+        padding: 8px 0 24px;
+    }
+
+    .thesis-container1 .content{
+        display: none;
+    }
+    
+    .thesis-container2 {
+        display: none;
+    }
+}
+
+/* Footer Secton */
+
 footer {
     display: flex;
     justify-content: space-between;
@@ -356,4 +410,14 @@ footer {
 
 footer span {
     padding: 16px 24px;
+}
+
+@media only screen and (max-with: 760px) {
+    footer span {
+        padding: 16px 0;
+    }
+    
+    footer .mobile {
+        display: none;
+    }
 }
