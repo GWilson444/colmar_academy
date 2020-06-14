@@ -151,6 +151,32 @@ main {
     border: none;
 }
 
+@media only screen and (max-width: 1182px) {
+    .start-container2 h1 {
+        font-size: 3rem;
+    }
+
+    .start-container2 h3 {
+        font-size: 1.725rem;
+    }
+
+    .start-container2 button {
+        margin: 0 auto;
+        width: 90%;
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 918px) {
+    .start-container2 h1 {
+        font-size: 2rem;
+    }
+
+    .start-container2 h3 {
+        font-size: 1.15rem;
+    }
+}
+
 @media only screen and (max-width: 760px) {
     #start-section {
         flex-direction: column;
@@ -259,6 +285,39 @@ main {
     color: #557A95;
 }
 
+@media only screen and (max-width: 1095px) {
+    .info-container2 .container .content p {
+        font-size: 1rem;
+    }
+
+    .info-container2 .container .content h3 {
+        font-size: 1.15rem;
+    }
+}
+
+@media only screen and (max-width: 816px) {
+    #info-section .desktop {
+        display: none;
+    }
+
+    .info-container2 .container {
+        border: none;
+    }
+
+    .info-container1 .content p {
+        font-size: 1rem;
+    }
+
+    .info-container1 .content h2 {
+        font-size: 1.5rem;
+    }
+
+    .info-container2 {
+        justify-content: space-around;
+    }
+}
+
+
 @media only screen and (max-width: 760px) {
     #info-section .desktop {
         display: none;
@@ -315,6 +374,13 @@ main {
     margin: auto;
 }
 
+#courses-section .container {
+    display: flex;
+    flex-flow: column wrap;
+    max-width: 417px;
+    margin: 16px;
+}
+
 .courses-container {
     display: flex;
     flex-flow: row wrap;
@@ -328,17 +394,10 @@ main {
     width: 100%;
 }
 
-.courses-container h3 {
+.courses-container.mobile {
     display: none;
 }
 
-.courses-container .container{
-    display: flex;
-    flex-flow: column wrap;
-    min-width: ;
-    max-width: 417px;
-    margin: 16px;
-}
 .courses-container .content {
     padding: 16px 16px 24px;
     background-color: lightgray;
@@ -367,10 +426,12 @@ main {
     }
 
     .courses-container h3 {
+        display: inline-block;
         width: 100%;
-        padding: 16px 0 24px 16px;
+        padding: 16px 0 24px;
         margin: 4px 0;
         background-color: lightgray;
+        border: 2px solid #7395AE;
     }
 }
 
@@ -429,6 +490,16 @@ main {
 .thesis-container2 .content {
     width: 65%;
     margin: auto;
+}
+
+@media only screen and (max-width: 1135px) {
+    .thesis-container2 .container .content p {
+        font-size: 1rem;
+    }
+
+    .thesis-container2 .container .content h3 {
+        font-size: 1.15rem;
+    }
 }
 
 @media only screen and (max-width: 760px) {
